@@ -1,0 +1,63 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client"
+  output   = "../lib/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Volume {
+  id     Int     @id @default(autoincrement())
+  number Int     @unique
+  year   Int
+  papers Paper[]
+}
+
+model Author {
+  id          Int           @id @default(autoincrement())
+  name        String
+  affiliation String?
+  email       String?
+  papers      PaperAuthor[]
+}
+
+model Paper {
+  id                Int           @id @default(autoincrement())
+  slug              String        @unique
+  title             String
+  abstract          String
+  pdfUrl            String
+  supplementaryUrl  String?
+  pages             String?
+  publishedAt       DateTime
+  keywords          String[]
+  volumeId          Int
+  volume            Volume        @relation(fields: [volumeId], references: [id])
+  authors           PaperAuthor[]
+
+  @@index([volumeId])
+}
+
+model PaperAuthor {
+  paperId  Int
+  authorId Int
+  order    Int
+  paper    Paper  @relation(fields: [paperId], references: [id])
+  author   Author @relation(fields: [authorId], references: [id])
+
+  @@id([paperId, authorId])
+  @@index([authorId])
+}
+
+model BoardMember {
+  id          Int    @id @default(autoincrement())
+  name        String
+  role        String
+  affiliation String?
+  url         String?
+  order       Int    @default(0)
+}
