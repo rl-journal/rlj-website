@@ -1,34 +1,111 @@
-@import "tailwindcss";
+/* Replication of the JMLR (jmlr.org) look for the Reinforcement Learning
+   Journal. jmlr.org's design is a ~30-line inline stylesheet plus browser
+   defaults: black serif text, #3030a0 links with no underline or hover
+   effects, a fixed 8em left sidebar with right-aligned links, and a fluid
+   content column. */
 
-:root {
-  color-scheme: light;
-  --background: #ffffff;
-  --foreground: #000000;
-  --muted: #555555;
-  --rule: #cccccc;
-  --link: #1a0dab;
-}
+* { box-sizing: border-box; }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-muted: var(--muted);
-  --color-rule: var(--rule);
-  --color-link: var(--link);
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: "Times New Roman", Times, Georgia, serif;
+  background: #ffffff;
+  color: #000000;
+  font-family: "Times New Roman", Times, serif;
   font-size: 16px;
-  line-height: 1.6;
 }
 
-a {
-  color: var(--link);
+a,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: #3030a0;
 }
 
-a:hover {
-  text-decoration: underline;
+img { border: 0; max-width: 100%; }
+
+/* Fixed left sidebar (JMLR #fixed: 8em wide, right-aligned contents) */
+#fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8em;
+  height: 100%;
+  text-align: right;
+  overflow-y: auto;
+}
+
+#fixed p {
+  margin: 1em 0;
+}
+
+#fixed img.logo {
+  width: 7em;
+  margin-top: 1em;
+  margin-bottom: 2em; /* logo-to-nav gap as on jmlr.org */
+}
+
+/* Main content column (JMLR #content): fluid width, not centered */
+#content {
+  margin-top: 1em;
+  margin-left: 10em; /* 8em sidebar + 2em gutter */
+  margin-right: 0.5em;
+}
+
+ul li { margin-bottom: 0.5em; }
+
+/* Paper entries in volume listings. JMLR markup:
+   <dl><dt>Title</dt><dd><b><i>Authors</i></b>; 1:23−45, 2024.
+   <br>[abs][pdf][bib]</dd></dl> — the 40px dd indent is part of the look. */
+dl { margin: 1em 0; }
+
+dt { font-weight: normal; } /* titles are plain black text, not links */
+
+dd { margin-left: 40px; }
+
+.paper-authors {
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Inert "[abs]" label on the abstract page */
+.abs-label { color: gray; }
+
+/* BibTeX block on the abstract page */
+pre.bibtex {
+  white-space: pre;
+  overflow-x: auto;
+}
+
+/* Editorial board (styles verbatim from jmlr.org/editorial-board.html) */
+.editors li { margin-bottom: 8px; }
+
+.editors .name { font-weight: bold; }
+
+/* Right-aligned small copyright line at the bottom of the content column */
+footer {
+  text-align: right;
+  font-size: small;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+/* JMLR has no responsive rules at all; this block is the one intentional
+   addition so the sidebar doesn't overlap content on narrow screens. */
+@media (max-width: 640px) {
+  #fixed {
+    position: static;
+    width: auto;
+    height: auto;
+    text-align: left;
+    padding: 0 1em;
+  }
+  #content {
+    margin-left: 0.5em;
+  }
 }

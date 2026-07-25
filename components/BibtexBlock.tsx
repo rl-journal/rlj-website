@@ -13,15 +13,9 @@ export default function BibtexBlock({ bibtex }: { bibtex: string }) {
 
   return (
     <div>
-      <pre className="border border-rule bg-black/[.02] p-4 text-sm overflow-x-auto font-mono whitespace-pre">
-        {bibtex}
-      </pre>
-      <button
-        type="button"
-        onClick={handleCopy}
-        className="text-sm mt-2 underline"
-      >
-        {copied ? "Copied!" : "Copy to clipboard"}
+      <pre className="bibtex">{bibtex}</pre>
+      <button type="button" onClick={handleCopy}>
+        {copied ? "Copied!" : "Copy BibTeX"}
       </button>
     </div>
   );

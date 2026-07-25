@@ -1,28 +1,14 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { prisma } from "@/lib/db";
+import { getVolume, getVolumes } from "@/lib/content";
 import PaperListItem from "@/components/PaperListItem";
 
-export const revalidate = 300;
+export const dynamicParams = false;
 
 type Props = { params: Promise<{ number: string }> };
 
-async function getVolume(numberParam: string) {
-  const number = Number(numberParam);
-  if (!Number.isInteger(number)) return null;
-
-  return prisma.volume.findUnique({
-    where: { number },
-    include: {
-      papers: {
-        orderBy: { publishedAt: "asc" },
-        include: {
-          volume: true,
-          authors: { include: { author: true } },
-        },
-      },
-    },
-  });
+export function generateStaticParams() {
+  return getVolumes().map((v) => ({ number: String(v.number) }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -32,23 +18,24 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function VolumePage({ params }: Props) {
   const { number } = await params;
-  const volume = await getVolume(number);
+  const volume = getVolume(Number(number));
   if (!volume) notFound();
 
   return (
     <div>
-      <h1 className="text-xl font-bold mb-6">
-        Volume {volume.number} ({volume.year})
+      <h1>
+        RLJ Volume {volume.number} ({volume.year})
       </h1>
-      {volume.papers.length === 0 ? (
-        <p className="text-muted">No papers published in this volume yet.</p>
-      ) : (
-        <ul>
-          {volume.papers.map((paper) => (
-            <PaperListItem key={paper.slug} paper={paper} />
-          ))}
-        </ul>
-      )}
+      <p>
+        Published as part of {volume.issue.title}, DOI:{" "}
+        <a target="_blank" href={`https://doi.org/${volume.issue.doi}`}>
+          {volume.issue.doi}
+        </a>
+        .
+      </p>
+      {volume.papers.map((paper) => (
+        <PaperListItem key={paper.slug} paper={paper} />
+      ))}
     </div>
   );
 }

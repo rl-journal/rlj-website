@@ -1,20 +1,31 @@
-import Link from "next/link";
-import { authorNames, type PaperSummary } from "@/lib/types";
+import { citation, type Paper } from "@/lib/content";
 
-export default function PaperListItem({ paper }: { paper: PaperSummary }) {
+/* One paper entry, JMLR volume-listing style:
+   title as plain text, bold-italic authors, "volume:pages, year.",
+   then a [abs][pdf][supp] link row. */
+export default function PaperListItem({ paper }: { paper: Paper }) {
   return (
-    <li className="mb-6">
-      <Link href={`/papers/${paper.slug}`} className="font-bold">
-        {paper.title}
-      </Link>
-      <p className="italic mt-0.5">{authorNames(paper)}</p>
-      <p className="text-muted mt-0.5">
-        {paper.volume.number}({paper.volume.year})
-        {paper.pages ? `:${paper.pages}` : ""}.
-      </p>
-      <p className="text-sm mt-0.5">
-        [<a href={paper.pdfUrl}>pdf</a>]
-      </p>
-    </li>
+    <dl>
+      <dt>{paper.title}</dt>
+      <dd>
+        <span className="paper-authors">{paper.authors.join(", ")}</span>;{" "}
+        {citation(paper)}
+        <br />
+        [<a href={`/papers/${paper.slug}`}>abs</a>][
+        <a target="_blank" href={paper.pdfUrl}>
+          pdf
+        </a>
+        ]
+        {paper.suppUrl && (
+          <>
+            [
+            <a target="_blank" href={paper.suppUrl}>
+              supp
+            </a>
+            ]
+          </>
+        )}
+      </dd>
+    </dl>
   );
 }

@@ -1,30 +1,45 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { prisma } from "@/lib/db";
+import { getIssues, getVolumes } from "@/lib/content";
 
-export const metadata: Metadata = { title: "Volumes" };
-export const revalidate = 300;
+export const metadata: Metadata = { title: "Papers" };
 
-export default async function VolumesPage() {
-  const volumes = await prisma.volume.findMany({
-    orderBy: { number: "desc" },
-    include: { _count: { select: { papers: true } } },
-  });
+export default function VolumesPage() {
+  const volumes = getVolumes();
+  const issues = getIssues();
 
   return (
     <div>
-      <h1 className="text-xl font-bold mb-6">Volumes</h1>
-      <ul>
-        {volumes.map((volume) => (
-          <li key={volume.id} className="py-2">
-            <Link href={`/volumes/${volume.number}`}>
-              Volume {volume.number}
-            </Link>{" "}
-            ({volume.year}) — {volume._count.papers} paper
-            {volume._count.papers === 1 ? "" : "s"}
-          </li>
-        ))}
-      </ul>
+      <h1>RLJ Papers</h1>
+      <p>
+        Select a volume number to see its table of contents with links to the
+        papers.
+      </p>
+      {volumes.map((volume) => (
+        <p key={volume.number}>
+          <a href={`/volumes/${volume.number}`}>Volume {volume.number}</a> (
+          {volume.year})
+        </p>
+      ))}
+
+      <h2>Complete Proceedings</h2>
+      {issues.map((issue) => (
+        <p key={issue.year}>
+          {issue.title}: [<a target="_blank" href={issue.issuePdf}>pdf</a>]
+          {issue.coverPagesPdf && (
+            <>
+              [
+              <a target="_blank" href={issue.coverPagesPdf}>
+                cover pages
+              </a>
+              ]
+            </>
+          )}{" "}
+          DOI:{" "}
+          <a target="_blank" href={`https://doi.org/${issue.doi}`}>
+            {issue.doi}
+          </a>
+        </p>
+      ))}
     </div>
   );
 }

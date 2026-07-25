@@ -1,0 +1,65 @@
+{
+  "intro": "The editors of RLJ, who also serve as the Organizers and Program Committee for RLC, are:",
+  "groups": [
+    {
+      "role": "Editor-in-Chief",
+      "members": [
+        {
+          "name": "Philip S. Thomas",
+          "url": "https://people.cs.umass.edu/~pthomas/",
+          "affiliation": "Manning College of Information and Computer Sciences, University of Massachusetts"
+        }
+      ]
+    },
+    {
+      "role": "Editors",
+      "members": [
+        {
+          "name": "Feryal Behbahani",
+          "url": "https://feryal.github.io/",
+          "affiliation": "Google DeepMind"
+        },
+        {
+          "name": "Glen Berseth",
+          "url": "https://neo-x.github.io/",
+          "affiliation": "Department of Computer Science and Operations Research, Université de Montréal"
+        },
+        {
+          "name": "Emma M. Jordan",
+          "url": "https://emmaajordan.github.io/",
+          "affiliation": "University of Pittsburgh"
+        },
+        {
+          "name": "Scott Niekum",
+          "url": "https://people.cs.umass.edu/~sniekum/",
+          "affiliation": "Manning College of Information and Computer Sciences, University of Massachusetts"
+        },
+        {
+          "name": "Andrew Patterson",
+          "url": "https://andnp.github.io/",
+          "affiliation": "Department of Computing Science, University of Alberta"
+        },
+        {
+          "name": "Eugene Vinitsky",
+          "url": "https://www.eugenevinitsky.com/",
+          "affiliation": "Department of Civil and Urban Engineering, New York University"
+        },
+        {
+          "name": "Adam White",
+          "url": "https://sites.ualberta.ca/~amw8/",
+          "affiliation": "Department of Computing Science, University of Alberta"
+        },
+        {
+          "name": "Martha White",
+          "url": "http://webdocs.cs.ualberta.ca/~whitem/",
+          "affiliation": "Department of Computing Science, University of Alberta"
+        },
+        {
+          "name": "Amy Zhang",
+          "url": "https://amyzhang.github.io/",
+          "affiliation": "Department of Electrical and Computer Engineering, University of Texas at Austin"
+        }
+      ]
+    }
+  ]
+}
