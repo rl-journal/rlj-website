@@ -17,7 +17,7 @@ export default function Sidebar() {
   return (
     <div id="fixed">
       <a href="/">
-        <img className="logo" src="/rlj-logo.png" alt="Reinforcement Learning Journal" />
+        <img className="logo" src="/rlj-logo.svg" alt="Reinforcement Learning Journal" />
       </a>
       {navLinks.map((link) => (
         <p key={link.href}>
