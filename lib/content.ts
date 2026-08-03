@@ -28,8 +28,11 @@ export type Issue = {
   papers: Paper[];
 };
 
+/* One entry per issue (i.e. per year), covering every volume number that issue
+   spans: 2024 is a single "Volumes 1–5", 2025 a single "Volume 6". */
 export type Volume = {
-  number: number;
+  slug: string;
+  label: string;
   year: number;
   papers: Paper[];
   issue: Issue;
@@ -54,22 +57,25 @@ export function getIssues(): Issue[] {
 }
 
 export function getVolumes(): Volume[] {
-  const volumes = new Map<number, Volume>();
-  for (const issue of getIssues()) {
-    for (const paper of issue.papers) {
-      let volume = volumes.get(paper.volume);
-      if (!volume) {
-        volume = { number: paper.volume, year: paper.year, papers: [], issue };
-        volumes.set(paper.volume, volume);
-      }
-      volume.papers.push(paper);
-    }
-  }
-  return [...volumes.values()].sort((a, b) => b.number - a.number);
+  return getIssues().map((issue) => {
+    const numbers = [...new Set(issue.papers.map((p) => p.volume))].sort(
+      (a, b) => a - b,
+    );
+    const first = numbers[0];
+    const last = numbers[numbers.length - 1];
+    const single = first === last;
+    return {
+      slug: single ? `${first}` : `${first}-${last}`,
+      label: single ? `Volume ${first}` : `Volumes ${first}–${last}`,
+      year: issue.year,
+      papers: issue.papers,
+      issue,
+    };
+  });
 }
 
-export function getVolume(number: number): Volume | undefined {
-  return getVolumes().find((v) => v.number === number);
+export function getVolume(slug: string): Volume | undefined {
+  return getVolumes().find((v) => v.slug === slug);
 }
 
 export function getAllPapers(): Paper[] {

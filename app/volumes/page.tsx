@@ -11,13 +11,11 @@ export default function VolumesPage() {
     <div>
       <h1>RLJ Papers</h1>
       <p>
-        Select a volume number to see its table of contents with links to the
-        papers.
+        Select a volume to see its table of contents with links to the papers.
       </p>
       {volumes.map((volume) => (
-        <p key={volume.number}>
-          <a href={`/volumes/${volume.number}`}>Volume {volume.number}</a> (
-          {volume.year})
+        <p key={volume.slug}>
+          <a href={`/volumes/${volume.slug}`}>{volume.label}</a> ({volume.year})
         </p>
       ))}
 

@@ -5,26 +5,26 @@ import PaperListItem from "@/components/PaperListItem";
 
 export const dynamicParams = false;
 
-type Props = { params: Promise<{ number: string }> };
+type Props = { params: Promise<{ slug: string }> };
 
 export function generateStaticParams() {
-  return getVolumes().map((v) => ({ number: String(v.number) }));
+  return getVolumes().map((v) => ({ slug: v.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { number } = await params;
-  return { title: `Volume ${number}` };
+  const { slug } = await params;
+  return { title: getVolume(slug)?.label ?? "Papers" };
 }
 
 export default async function VolumePage({ params }: Props) {
-  const { number } = await params;
-  const volume = getVolume(Number(number));
+  const { slug } = await params;
+  const volume = getVolume(slug);
   if (!volume) notFound();
 
   return (
     <div>
       <h1>
-        RLJ Volume {volume.number} ({volume.year})
+        RLJ {volume.label} ({volume.year})
       </h1>
       <p>
         Published as part of {volume.issue.title}, DOI:{" "}
