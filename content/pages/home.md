@@ -15,9 +15,9 @@ copyright over their work, thus promoting the free exchange of ideas within the
 scientific community. For more information, see the RLJ
 [Publication Agreement](https://rlj.cs.umass.edu/RLC_Publication_Agreement_Form.pdf).
 
-Submissions to RLJ are accepted on an annual basis, adhering to a specific
-submission deadline each year. Authors interested in contributing are encouraged to
-review the detailed submission guidelines and deadlines in the annual RLC Call for
+Submissions to RLJ are accepted on a rolling basis, publishing a new volume four 
+times a year. Authors interested in contributing are encouraged to review the detailed 
+submission guidelines and deadlines in the annual RLC Call for
 Papers — see [Submissions](/submit) for details.
 
 Published papers are available under [Papers](/volumes), and the journal's editors
