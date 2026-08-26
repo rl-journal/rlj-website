@@ -31,11 +31,21 @@ export default function VolumesPage() {
               </a>
               ]
             </>
+          )}
+          {issue.xmlUrl && (
+            <>
+              [
+              <a target="_blank" href={issue.xmlUrl}>
+                xml
+              </a>
+              ]
+            </>
           )}{" "}
           DOI:{" "}
           <a target="_blank" href={`https://doi.org/${issue.doi}`}>
             {issue.doi}
           </a>
+          {issue.isbn && <>, ISBN: {issue.isbn}</>}
         </p>
       ))}
     </div>

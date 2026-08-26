@@ -23,8 +23,10 @@ export type Issue = {
   year: number;
   title: string;
   doi: string;
+  isbn: string | null;
   issuePdf: string;
   coverPagesPdf: string | null;
+  xmlUrl: string | null;
   papers: Paper[];
 };
 

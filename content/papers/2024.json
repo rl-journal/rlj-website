@@ -2,8 +2,10 @@
   "year": 2024,
   "title": "RLJ 2024: Volumes 1–5",
   "doi": "10.5281/zenodo.13899776",
+  "isbn": "979-8-218-41163-3",
   "issuePdf": "https://rlj.cs.umass.edu/2024/RLJ_2024.pdf",
   "coverPagesPdf": null,
+  "xmlUrl": "https://rlj.cs.umass.edu/2024/RLJ2024.xml",
   "papers": [
     {
       "number": 2,
