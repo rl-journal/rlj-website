@@ -27,10 +27,6 @@ are listed on the [Editorial Board](/board) page.
 
 **ISSN 2996-8569** (Print)
 
-**ISBN 979-8-218-41163-3**
-
 **2024, Volumes 1–5 DOI:** [10.5281/zenodo.13899776](https://doi.org/10.5281/zenodo.13899776)
-
-**2024, Volumes 1–5 XML:** [link](https://rlj.cs.umass.edu/2024/RLJ2024.xml)
 
 **2025, Volume 6 DOI:** [10.5281/zenodo.21537949](https://doi.org/10.5281/zenodo.21537949)

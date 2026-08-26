@@ -1,10 +1,11 @@
 # Submissions
 
-Submissions to RLJ are accepted on an annual basis, adhering to a specific
-submission deadline each year. The detailed submission guidelines and deadlines are
-published in the annual Call for Papers of the Reinforcement Learning Conference
-([RLC](https://rl-conference.cc/)), which is updated a few months prior to each
-deadline and can be expected to fall around the same date each year.
+Submissions to RLJ are accepted on a rolling basis, with a new volume published four
+times a year. The detailed submission guidelines are published in the annual Call for
+Papers of the Reinforcement Learning Conference ([RLC](https://rl-conference.cc/)),
+which is updated a few months prior to each RLC deadline. Papers intended for
+presentation at RLC must be submitted by that year's RLC deadline, which can be
+expected to fall around the same date each year.
 
 ## Review Process
 
