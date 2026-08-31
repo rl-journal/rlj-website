@@ -1,7 +1,7 @@
 # Reinforcement Learning Journal (RLJ)
 
-The **Reinforcement Learning Journal (RLJ)** is an annual peer-reviewed publication
-focusing on the field of reinforcement learning. RLJ is complemented by the
+The **Reinforcement Learning Journal (RLJ)** is a quarterly peer-reviewed publication
+focusing on reinforcement learning. RLJ is complemented by the
 Reinforcement Learning Conference ([RLC](https://rl-conference.cc/)), an associated
 event where researchers can present and elaborate on their findings that are
 published in RLJ. It is important to note that RLJ is an independent, peer-reviewed
@@ -17,8 +17,7 @@ scientific community. For more information, see the RLJ
 
 Submissions to RLJ are accepted on a rolling basis, publishing a new volume four 
 times a year. Authors interested in contributing are encouraged to review the detailed 
-submission guidelines and deadlines in the annual RLC Call for
-Papers — see [Submissions](/submit) for details.
+submission guidelines — see [Submissions](/submit) for details.
 
 Published papers are available under [Papers](/volumes), and the journal's editors
 are listed on the [Editorial Board](/board) page.
