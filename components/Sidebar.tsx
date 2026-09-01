@@ -17,7 +17,13 @@ const navLinks: NavLink[] = [
     href: "/submit",
     label: "Submissions",
     children: [
-      { href: "/authors-guide", label: "Authors Guide" },
+      {
+        href: "/authors-guide",
+        label: "Authors Guide",
+        children: [
+          { href: "/authors-guide/style-files", label: "Style Files" },
+        ],
+      },
       {
         href: "/reviewers-guide",
         label: "Reviewers Guide",

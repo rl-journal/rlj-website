@@ -4,15 +4,22 @@ import { marked } from "marked";
 
 const CONTENT_DIR = join(process.cwd(), "content");
 
+const LAYOUT_IDS = ["content", "fixed"];
+
+let usedIds = new Set<string>();
+
 marked.use({
   renderer: {
     heading({ tokens, depth }) {
       const text = this.parser.parseInline(tokens);
-      const id = text
+      const base = text
         .replace(/<[^>]*>/g, "")
         .toLowerCase()
         .replace(/[^a-z0-9]+/g, "-")
         .replace(/^-+|-+$/g, "");
+      let id = base;
+      for (let n = 2; usedIds.has(id); n++) id = `${base}-${n}`;
+      usedIds.add(id);
       return `<h${depth} id="${id}">${text}</h${depth}>\n`;
     },
   },
@@ -108,6 +115,7 @@ export function getBoard(): { intro: string; groups: BoardGroup[] } {
 
 export function getPageHtml(name: string): string {
   const md = readFileSync(join(CONTENT_DIR, "pages", `${name}.md`), "utf8");
+  usedIds = new Set(LAYOUT_IDS);
   return marked.parse(md, { async: false });
 }
 
