@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import PaperLinks from "./PaperLinks";
 
 type IndexEntry = {
   slug: string;
@@ -8,6 +9,8 @@ type IndexEntry = {
   authors: string[];
   citation: string;
   pdfUrl: string;
+  suppUrl: string | null;
+  bibtex: string;
 };
 
 export default function SearchClient({ index }: { index: IndexEntry[] }) {
@@ -44,11 +47,12 @@ export default function SearchClient({ index }: { index: IndexEntry[] }) {
             <span className="paper-authors">{paper.authors.join(", ")}</span>;{" "}
             {paper.citation}
             <br />
-            [<a href={`/papers/${paper.slug}`}>abs</a>][
-            <a target="_blank" href={paper.pdfUrl}>
-              pdf
-            </a>
-            ]
+            <PaperLinks
+              slug={paper.slug}
+              pdfUrl={paper.pdfUrl}
+              suppUrl={paper.suppUrl}
+              bibtex={paper.bibtex}
+            />
           </dd>
         </dl>
       ))}

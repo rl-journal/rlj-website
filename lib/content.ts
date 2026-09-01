@@ -63,7 +63,7 @@ export type Volume = {
 
 export type BoardGroup = {
   role: string;
-  members: { name: string; url?: string; affiliation: string }[];
+  members: { name: string; url?: string; affiliation: string; note?: string }[];
 };
 
 let issuesCache: Issue[] | null = null;

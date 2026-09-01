@@ -23,6 +23,7 @@ export default function BoardPage() {
                 ) : (
                   <b>{member.name}</b>
                 )}
+                {member.note && <i> ({member.note})</i>}
                 , {member.affiliation}.
               </li>
             ))}

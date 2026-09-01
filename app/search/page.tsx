@@ -11,6 +11,8 @@ export default function SearchPage() {
     authors: p.authors,
     citation: citation(p),
     pdfUrl: p.pdfUrl,
+    suppUrl: p.suppUrl,
+    bibtex: p.bibtex,
   }));
 
   return (

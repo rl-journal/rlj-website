@@ -1,8 +1,6 @@
 # RLJ Submission Guide
 
-Before preparing a submission, read the [Reviewers Guide](/reviewers-guide). It describes
-the criteria reviewers apply, and RLJ's standards are deliberately stricter than those
-of most AI/ML venues.
+The RLJ peer review process prioritizes rigorous methodology over perceived importance, aiming to foster scholarly discussions on both well-established and emerging topics in RL.
 
 ## Scope
 

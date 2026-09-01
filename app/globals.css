@@ -29,8 +29,9 @@ img { border: 0; max-width: 100%; }
   left: 0;
   width: 11em;
   height: 100%;
-  text-align: right;
-  padding-right: 0.1em;
+  text-align: left;
+  padding-left: 1em;
+  padding-right: 0.25em;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -46,20 +47,23 @@ img { border: 0; max-width: 100%; }
 }
 
 #fixed p.nav-depth-1 {
-  margin-right: 0.5em;
+  margin-left: 1em;
   font-size: 90%;
 }
 
 #fixed p.nav-depth-2 {
-  margin-right: 1.25em;
+  margin-left: 2em;
   font-size: 85%;
 }
 
 #fixed img.logo {
+  display: block;
   width: 7em;
   height: 6.0em;
   margin-top: 1em;
   margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Main content column */
@@ -88,10 +92,25 @@ dd { margin-left: 40px; }
 /* Inert "[abs]" label on the abstract page */
 .abs-label { color: gray; }
 
-/* BibTeX block on the abstract page */
+/* "[bib]" in a listing's link row: a button, so it can toggle the BibTeX
+   in place, but it has to read as one of the surrounding links. */
+button.linklike {
+  background: none;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  color: #3030a0;
+  cursor: pointer;
+}
+
+/* BibTeX block on the abstract page, and expanded under a listing entry */
 pre.bibtex {
   white-space: pre;
   overflow-x: auto;
+}
+
+dd pre.bibtex {
+  margin: 0.5em 0 0.4em;
 }
 
 /* Boxed callout in the markdown pages */
@@ -138,14 +157,5 @@ footer {
   }
   #content {
     margin-left: 0.5em;
-  }
-
-  #fixed p.nav-depth-1 {
-    margin-right: 0;
-    margin-left: 0.5em;
-  }
-  #fixed p.nav-depth-2 {
-    margin-right: 0;
-    margin-left: 1.25em;
   }
 }
