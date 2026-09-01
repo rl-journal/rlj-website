@@ -4,6 +4,20 @@ import { marked } from "marked";
 
 const CONTENT_DIR = join(process.cwd(), "content");
 
+marked.use({
+  renderer: {
+    heading({ tokens, depth }) {
+      const text = this.parser.parseInline(tokens);
+      const id = text
+        .replace(/<[^>]*>/g, "")
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-+|-+$/g, "");
+      return `<h${depth} id="${id}">${text}</h${depth}>\n`;
+    },
+  },
+});
+
 export type Paper = {
   number: number;
   slug: string;
