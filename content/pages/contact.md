@@ -1,6 +1,6 @@
 # Contact
 
-<strong style="color:red">TODO — replace the placeholders below with real addresses before publishing.</strong>
+<strong style="color:red">TODO—replace the placeholders below with real addresses before publishing.</strong>
 
 ## Editorial enquiries
 
@@ -9,8 +9,8 @@ paper, contact the editors at <strong style="color:red">TODO: editorial email ad
 
 ## Submissions and peer review
 
-Questions about a submission under review — its status, reviewer assignment, or the
-author response phase — are handled through
+Questions about a submission under review—its status, reviewer assignment, or the
+author response phase—are handled through
 [OpenReview](https://openreview.net/), not by email. See [Submissions](/submit) for
 how the review process works.
 

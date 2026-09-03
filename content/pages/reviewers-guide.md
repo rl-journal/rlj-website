@@ -11,8 +11,8 @@ It is worth stressing that this is notably different from the typical
 NeurIPS/ICLR/ICML review process.
 
 This guide is public. It covers the criteria a paper is judged against and how
-each kind of review is written; the mechanics of the process — timeline, decisions,
-resubmission — live on [Author Guide](/submit#review-process) so that they
+each kind of review is written; the mechanics of the process—timeline, decisions,
+resubmission—live on [Author Guide](/submit#review-process) so that they
 are stated in one place. Authors are strongly encouraged to read both before submitting.
 
 At a high level, the two types of reviews differ as follows. A **technical review** is

@@ -20,7 +20,7 @@ part; it is very intentional. For the wider context of these instructions, see t
 
 ## Questions You Will Be Asked
 
-Below are the questions you will be asked in OpenReview — there will be a textbox for
+Below are the questions you will be asked in OpenReview—there will be a textbox for
 each sub-bullet here.
 
 1. For each claimed contribution:

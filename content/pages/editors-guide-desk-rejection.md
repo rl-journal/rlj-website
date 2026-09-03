@@ -30,7 +30,7 @@ months before resubmitting.
 
 ## Major Categories of Errors
 
-1. *Missing related work* — either entire categories (e.g., the paper is about
+1. *Missing related work*-either entire categories (e.g., the paper is about
    temporal abstraction and never cites work on options) or a baseline that you know to
    be essential.
 2. *Vacuous theoretical statements.*
@@ -55,10 +55,10 @@ general:
 
 ### Template for a desk rejection note
 
-- *Purpose* — Why desk reject? To save time and ensure efficiency.
-- *Primary issue(s)* — Bullet points of 1–2 major issues.
-- *Specific examples* — Concrete instances for each issue.
-- *Path forward* — Fix and resubmit, versus wait 6 months.
+- *Purpose*: Why desk reject? To save time and ensure efficiency.
+- *Primary issue(s)*: Bullet points of 1–2 major issues.
+- *Specific examples*: Concrete instances for each issue.
+- *Path forward*: Fix and resubmit, versus wait 6 months.
 
 ### Hypothetical exemplar desk rejection note
 

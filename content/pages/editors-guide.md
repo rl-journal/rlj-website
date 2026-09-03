@@ -126,4 +126,4 @@ letter even if the authors choose not to revise the manuscript.
 You may then decide whether to accept or reject the paper immediately, whether to
 consult the previous reviewers, or whether to initiate an entirely new review of the
 paper. Barring extenuating circumstances, resubmitted papers should either be accepted
-or rejected — they should not be returned for further revisions.
+or rejected—they should not be returned for further revisions.
