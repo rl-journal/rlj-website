@@ -1,10 +1,8 @@
 # Style Files and Forms
 
 <div class="panel">
-<strong>RLJ style files—coming soon.</strong> The LaTeX style files and the Overleaf
-template will be linked here. Submissions must use them, so please check back before
-preparing your manuscript.
-<br><strong style="color:red">TODO: style file / Overleaf template URL</strong>
+<strong>RLJ LaTeX template.</strong> Prepare your submission using the official style
+files: <a href="https://www.overleaf.com/read/qbrrnmgxrtpt#9b9638">RLJ Template</a>.
 </div>
 
 ## Style Files
