@@ -13,7 +13,7 @@ the manuscript as submitted. For the wider context, see the
 The overall advice to senior reviewers is to focus on answering three questions:
 
 1. Does the work provide evidence supporting the main contributions proposed by the
-   authors — are claims matched by evidence? **This includes technical correctness.**
+   authors—are claims matched by evidence? **This includes technical correctness.**
 2. Is there an audience for the work?
 3. What knowledge gap did the paper address?
 
@@ -90,8 +90,8 @@ Although the claimed contributions should be used as a rubric that will often de
 the acceptance or rejection of the paper, a comprehensive review will also talk about
 the manuscript's presentation, scholarship, and more, including a statement on whether
 the manuscript would be of interest to five or more readers of RLJ. Comment on the
-polish and presentation of the paper — see
-[Polished and Well Written](/reviewers-guide/polished) — or list any other errors you found or
+polish and presentation of the paper—see
+[Polished and Well Written](/reviewers-guide/polished)—or list any other errors you found or
 comments you have.
 
 Inspired by [Sutton's guide for writing good reviews](https://www.dropbox.com/scl/fi/4sfm8x3qlm3xp05xs0cdg/review-advice.rtf?rlkey=t2dvidfscp87w83us8tk0gn57&dl=0), we recommend that reviewers

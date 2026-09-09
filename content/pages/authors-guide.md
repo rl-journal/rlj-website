@@ -40,7 +40,7 @@ Additionally, contribution statements should be contextualized and clearly (and 
 state the state of the field before the submission. The work discussed in the
 contextualization needs to be relevant to the submission.
 
-Reviewers use the cover page as a rubric — see
+Reviewers use the cover page as a rubric—see
 [Supporting Claims](/reviewers-guide/supporting-claims) for what constitutes sufficient support
 for a claimed contribution.
 
@@ -67,7 +67,7 @@ Upon paper acceptance, authors will be asked to submit a final version of the pa
 generated using the `[accept]` option in the style files. At this stage, only minor
 revisions (e.g., correcting typographical errors) will be permitted. Along with the 
 final PDF, authors must also submit a publication form acknowledging the
-rights granted to the journal — see
+rights granted to the journal—see
 [Style Files and Forms](/authors-guide/style-files).
 
 Copyright remains with the authors, who are free to share the final version of their

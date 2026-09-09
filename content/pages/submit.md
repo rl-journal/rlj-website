@@ -122,8 +122,8 @@ typical NeurIPS/ICLR/ICML process:
   list of technical errors in the paper. There is no commentary on novelty,
   significance, or impact. This is not an oversight; it is intentional.
 - A **[Senior Reviewer](/reviewers-guide/senior-reviewers)** writes the type of review authors
-  traditionally expect, focused on whether claims are matched by evidence — which
-  includes technical correctness — and on how the work is situated in the literature.
+  traditionally expect, focused on whether claims are matched by evidence—which
+  includes technical correctness—and on how the work is situated in the literature.
 
 Both are asked to work through your cover page contribution by contribution, stating
 for each one what evidence was offered and whether it was sufficient.
@@ -146,16 +146,16 @@ submissions.
 
 ### Decisions
 
-- **Accept** — The paper is accepted in its current form and only minor changes are
+- **Accept**: The paper is accepted in its current form and only minor changes are
   required, to the point that no response to the Editor is needed.
-- **Revisions** — The Editor provides a list of questions or proposed changes. Authors
+- **Revisions**: The Editor provides a list of questions or proposed changes. Authors
   are encouraged to respond within 3 months.
-- **Reject** — Authors are not allowed to resubmit similar versions of the paper for
+- **Reject**: Authors are not allowed to resubmit similar versions of the paper for
   **6 months**, unless otherwise specified in the notice of rejection.
 
 Note that a failure to support a claim typically results in **rejection, not revisions**.
 Because rejection carries a 6-month wait while revisions allow immediate resubmission,
-this distinction matters a great deal — see [Supporting Claims](/reviewers-guide/supporting-claims).
+this distinction matters a great deal—see [Supporting Claims](/reviewers-guide/supporting-claims).
 
 ### If your paper receives Revisions
 
@@ -167,7 +167,7 @@ not to change the manuscript.
 
 The Editor may then accept or reject the paper immediately, consult the previous
 reviewers, or initiate an entirely new review. Barring extenuating circumstances,
-resubmitted papers are either accepted or rejected — they are not returned for further
+resubmitted papers are either accepted or rejected—they are not returned for further
 revisions.
 
 ### Desk rejection
@@ -208,8 +208,8 @@ responsible for ensuring that plagiarized text does not occur, even if the LLM i
 source.
 
 Note that senior reviewers are instructed to verify that all cited papers exist, that
-the listed authors are correct, and that publication venues are accurately reported —
-generative AI tools can introduce citation errors and fabricated references.
+the listed authors are correct, and that publication venues are accurately reported—generative
+ AI tools can introduce citation errors and fabricated references.
 
 ## Publication
 
@@ -218,7 +218,7 @@ license. Copyright remains with the authors, who are free to share the final ver
 their work.
 
 Accepted papers require a final version prepared with the `[accept]` option in the style
-files, together with a signed publication agreement — see
+files, together with a signed publication agreement—see
 [Preparing the Final Version](/authors-guide#preparing-the-final-version).
 
 ## Publication Fees

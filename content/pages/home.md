@@ -17,7 +17,7 @@ scientific community. For more information, see the RLJ
 
 Submissions to RLJ are accepted on a rolling basis, publishing a new volume four 
 times a year. Authors interested in contributing are encouraged to review the detailed 
-submission guidelines — see [Submissions](/submit) for details.
+submission guidelines—see [Submissions](/submit) for details.
 
 Published papers are available under [Papers](/volumes), and the journal's editors
 are listed on the [Editorial Board](/board) page.

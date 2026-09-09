@@ -18,7 +18,7 @@ find interesting. From its creation, the goal of RLJ and RLC has been to signifi
 reduce this tastemaking, replacing it with a significantly higher bar for scientific
 rigor. **An outstanding paper with a brilliant and clear idea and impressive empirical
 results should be rejected from RLJ if it makes even minor mistakes in terms of
-scientific practice — mistakes that undermine the ability of the paper to sufficiently
+scientific practice—mistakes that undermine the ability of the paper to sufficiently
 support the claims that it makes.**
 
 ## Assessing Support
