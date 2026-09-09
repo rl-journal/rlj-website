@@ -45,7 +45,7 @@ const navLinks: NavLink[] = [
   },
   { href: "/board", label: "Editorial Board" },
   { href: "/search", label: "Search" },
-  { href: "/faq", label: "FAQ" },
+  
   { href: "/contact", label: "Contact" },
   {
     href: "https://rlj.cs.umass.edu/RLC_Publication_Agreement_Form.pdf",
