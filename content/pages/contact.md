@@ -1,7 +1,8 @@
 # Contact
 
-<strong style="color:red">TODO — replace the placeholders below with real addresses before publishing.</strong>
-
+Coming soon!
+<!-- <strong style="color:red">TODO — replace the placeholders below with real addresses before publishing.</strong> -->
+<!-- 
 ## Editorial enquiries
 
 For questions about the journal, published volumes, or corrections to a published
@@ -17,4 +18,4 @@ how the review process works.
 ## Website
 
 To report a broken link, a missing PDF, or an error in paper metadata on this site,
-contact <strong style="color:red">TODO: website contact address</strong>.
+contact <strong style="color:red">TODO: website contact address</strong>. -->

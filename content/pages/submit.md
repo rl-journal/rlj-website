@@ -33,9 +33,9 @@ learning community. For example, research on topics including, but not limited t
 - **Neuroscience, cognitive science, and philosophical work** targeting a computational
   RL audience
 
-We also welcome interdisciplinary or multidisciplinary research that does not neatly
+<!-- We also welcome interdisciplinary or multidisciplinary research that does not neatly
 fit into existing categories but which has an RL audience. If you have any questions,
-please reach out to <strong style="color:red">TODO: scope enquiries email address</strong>.
+please reach out to <strong style="color:red">TODO: scope enquiries email address</strong>. -->
 
 ## Content
 
@@ -83,7 +83,8 @@ within the **18 months preceding submission**.
 
 ## Submission Procedure
 
-RLJ accepts submissions via OpenReview: <strong style="color:red">TODO: OpenReview submission URL</strong>.
+RLJ accepts submissions via OpenReview, more information on this are coming soon.
+ <!-- <strong style="color:red">TODO: OpenReview submission URL</strong>. -->
 
 Submissions must be typeset in LaTeX using the RLJ style files. Only PDF files may be
 submitted. Papers that do not use the RLJ style files or do not comply with the

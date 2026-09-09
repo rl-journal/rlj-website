@@ -22,7 +22,6 @@ Perform a quick read of the paper to assess whether it should be desk-rejected.
 Criteria for desk rejection (and a description of the expected desk rejection text) can
 be found in [Desk Rejection Criteria and Process](/editors-guide/desk-rejection).
 
-<strong style="color:red">TODO: OpenReview process for recommending desk rejection.</strong>
 
 ### 2. Assign and recruit reviewers
 
@@ -34,8 +33,8 @@ assignment within 2 weeks of being assigned the paper. This step is critical -
 identifying or recruiting reliable reviewers whom you trust will make your subsequent
 job much easier.
 
-<strong style="color:red">TODO: OpenReview processes for assigning reviewers, adding reviewers to the pool, and
-inviting a one-off reviewer.</strong>
+<!-- <strong style="color:red">TODO: OpenReview processes for assigning reviewers, adding reviewers to the pool, and
+inviting a one-off reviewer.</strong> -->
 
 ### 3. Obtain reviews
 
@@ -51,7 +50,7 @@ Ensure that you are familiar with the
 follow the instructions, work with them to revise their reviews following the
 instructions.
 
-<strong style="color:red">TODO: reviewer reporting process, and OpenReview process for replacing a reviewer.</strong>
+<!-- <strong style="color:red">TODO: reviewer reporting process, and OpenReview process for replacing a reviewer.</strong> -->
 
 ### 4. Meta-review
 
@@ -59,7 +58,7 @@ Within 1 week of obtaining the reviews (or you may plan for this week to be 3 we
 after assigning reviewers, even if the reviews arrive far earlier), recommend a decision
 and complete the meta-review. This involves skimming or reading the paper yourself.
 
-<strong style="color:red">TODO: OpenReview process for entering the meta-review and recommendation.</strong>
+<!-- <strong style="color:red">TODO: OpenReview process for entering the meta-review and recommendation.</strong> -->
 
 ## Updating Authors
 
@@ -68,7 +67,7 @@ If any stage of the process takes longer than the prescribed time (see the
 authors in OpenReview to let them know about the delay and give them an updated
 timeline. Report the delay to the Editors-in-Chief.
 
-<strong style="color:red">TODO: process for reporting a delay to the Editors-in-Chief.</strong>
+<!-- <strong style="color:red">TODO: process for reporting a delay to the Editors-in-Chief.</strong> -->
 
 ## Accept / Revisions / Reject Criteria
 
