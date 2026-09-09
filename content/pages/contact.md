@@ -1,13 +1,8 @@
 # Contact
 
-<<<<<<< HEAD
 Coming soon!
 <!-- <strong style="color:red">TODO — replace the placeholders below with real addresses before publishing.</strong> -->
 <!-- 
-=======
-<strong style="color:red">TODO—replace the placeholders below with real addresses before publishing.</strong>
-
->>>>>>> d9340795f1beee3eed4741f1586da01ddd9e21c7
 ## Editorial enquiries
 
 For questions about the journal, published volumes, or corrections to a published
