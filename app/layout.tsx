@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
 import Footer from "@/components/Footer";
@@ -30,10 +31,6 @@ export default function RootLayout({
               "window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\\\(', '\\\\)']] } };",
           }}
         />
-        <script
-          async
-          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
-        />
       </head>
       <body>
         <Sidebar />
@@ -41,6 +38,10 @@ export default function RootLayout({
           {children}
           <Footer />
         </div>
+        <Script
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );

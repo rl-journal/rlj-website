@@ -146,16 +146,31 @@ footer {
   margin-bottom: 1em;
 }
 
+/* updates for mobile view */
 @media (max-width: 640px) {
   #fixed {
-    position: static;
-    width: auto;
-    height: auto;
-    text-align: left;
-    padding: 0 1em;
-    overflow: visible;
+    width: 7.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.25rem;
+    font-size: 87.5%;
   }
+
+  #fixed p.nav-depth-1 {
+    margin-left: 0.75em;
+  }
+
+  #fixed p.nav-depth-2 {
+    margin-left: 1.5em;
+  }
+
+  #fixed img.logo {
+    width: 5.5rem;
+    height: 4.7rem;
+    margin-bottom: 1.25rem;
+  }
+
   #content {
-    margin-left: 0.5em;
+    margin-left: 8.25rem;
+    margin-right: 0.5rem;
   }
 }
