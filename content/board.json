@@ -25,7 +25,8 @@
           "url": "https://amw8.github.io/",
           "affiliation": "Alberta Machine Intelligence Institute (Amii), Department of Computing Science, University of Alberta"
         }
-      ]
+      ],
+      "sorted": false
     },
     {
       "role": "Assistant Editors-in-Chief",
@@ -39,6 +40,146 @@
           "name": "Dikshant Shehmar",
           "url": "https://dikshuy.github.io",
           "affiliation": "Alberta Machine Intelligence Institute (Amii), Department of Computing Science, University of Alberta"
+        }
+      ]
+    },
+    {
+      "role": "Editors",
+      "members": [
+        {
+          "name": "David Abel",
+          "url": "https://david-abel.github.io/",
+          "affiliation": "Google DeepMind, University of Edinburgh"
+        },
+        {
+          "name": "Cameron Allen",
+          "url": "https://camallen.net",
+          "affiliation": "University of California, Berkeley"
+        },
+        {
+          "name": "Kelsey Allen",
+          "url": "https://k-r-allen.github.io/",
+          "affiliation": "University of British Columbia"
+        },
+        {
+          "name": "Philip Amortila",
+          "url": "https://www.philipamortila.com/",
+          "affiliation": "University of California, Berkeley"
+        },
+        {
+          "name": "Pierre-Luc Bacon",
+          "url": "https://pierrelucbacon.com/",
+          "affiliation": "Université de Montréal"
+        },
+        {
+          "name": "Andre Barreto",
+          "url": "https://sites.google.com/view/andrebarreto",
+          "affiliation": "Google DeepMind"
+        },
+        {
+          "name": "Daniel Brown",
+          "url": "https://users.cs.utah.edu/~dsbrown/",
+          "affiliation": "University of Utah"
+        },
+        {
+          "name": "Rosa Cao",
+          "url": "https://sites.google.com/site/luosha/home",
+          "affiliation": "Stanford University"
+        },
+        {
+          "name": "Pablo Samuel Castro",
+          "url": "https://psc-g.github.io/",
+          "affiliation": "Google DeepMind, Université de Montréal"
+        },
+        {
+          "name": "Yash Chandak",
+          "url": "https://yashchandak.github.io/",
+          "affiliation": "Cohere"
+        },
+        {
+          "name": "Brett Daley",
+          "url": "https://brettdaley.ai/",
+          "affiliation": "Meta"
+        },
+        {
+          "name": "Audrey Durand",
+          "url": "https://audurand.github.io/",
+          "affiliation": "Université Laval"
+        },
+        {
+          "name": "Roy Fox",
+          "url": "https://royf.org",
+          "affiliation": "University of California, Irvine"
+        },
+        {
+          "name": "Erin Grant",
+          "url": "https://eringrant.github.io/",
+          "affiliation": "University of Alberta"
+        },
+        {
+          "name": "Lucas Lehnert",
+          "url": "https://lucaslehnert.github.io/",
+          "affiliation": "University of Saskatchewan"
+        },
+        {
+          "name": "Sonali Parbhoo",
+          "url": "https://sites.google.com/view/sonali-parbhoo/home",
+          "affiliation": "Imperial College London"
+        },
+        {
+          "name": "Marek Petrik",
+          "url": "https://cs.unh.edu/~mpetrik/",
+          "affiliation": "University of New Hampshire"
+        },
+        {
+          "name": "Matthew Schlegel",
+          "url": "https://mkschleg.github.io/",
+          "affiliation": "University of Calgary"
+        },
+        {
+          "name": "Bruno Silva",
+          "url": "https://people.cs.umass.edu/~bsilva/",
+          "affiliation": "University of Massachusetts Amherst"
+        },
+        {
+          "name": "Felipe Silva",
+          "url": "https://f-leno.github.io/",
+          "affiliation": "Microsoft"
+        },
+        {
+          "name": "Erin Talvitie",
+          "url": "https://sites.google.com/g.hmc.edu/erinjtalvitie",
+          "affiliation": "Harvey Mudd College"
+        },
+        {
+          "name": "Shengpu Tang",
+          "url": "https://shengpu-tang.me/",
+          "affiliation": "Emory University"
+        },
+        {
+          "name": "Rick Valenzano",
+          "url": "https://sites.google.com/torontomu.ca/rickvalenzano",
+          "affiliation": "Toronto Metropolitan University"
+        },
+        {
+          "name": "Eugene Vinitsky",
+          "url": "https://www.eugenevinitsky.com/",
+          "affiliation": "New York University"
+        },
+        {
+          "name": "Martha White",
+          "url": "https://webdocs.cs.ualberta.ca/~whitem/",
+          "affiliation": "University of Alberta"
+        },
+        {
+          "name": "Shangtong Zhang",
+          "url": "https://shangtongzhang.github.io/",
+          "affiliation": "University of Virginia"
+        },
+        {
+          "name": "Özgür Şimşek",
+          "url": "https://researchportal.bath.ac.uk/en/persons/%C3%B6zg%C3%BCr-%C5%9Fim%C5%9Fek/",
+          "affiliation": "University of Bath"
         }
       ]
     }
