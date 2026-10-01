@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { getBoard } from "@/lib/content";
 import PersonList from "@/components/PersonList";
-import ReviewerLinks from "@/components/ReviewerLinks";
 
 export const metadata: Metadata = { title: "Editorial Board" };
 
@@ -18,10 +17,8 @@ export default function BoardPage() {
           <PersonList members={group.members} />
         </section>
       ))}
-      <section>
-        <h3>Reviewers</h3>
-        <ReviewerLinks />
-      </section>
+      {/* Reviewers section hidden for now. To restore: rename app/_reviewers
+          back to app/reviewers and put <ReviewerLinks /> back here. */}
     </div>
   );
 }
