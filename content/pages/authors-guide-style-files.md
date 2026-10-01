@@ -1,7 +1,9 @@
 # Style Files and Forms
 
 <div class="panel">
-The LaTeX style files and the Overleaf template are available <a href="https://www.overleaf.com/project/6a9b240b69a99ea2402c3396">here</a>.
+The RLJ template is available on
+<a href="https://www.overleaf.com/read/qbrrnmgxrtpt#9b9638">Overleaf</a>, or as a
+<a href="/RLJ_Submission_Template.zip">zip archive</a>.
 </div>
 
 ## Style Files
@@ -12,9 +14,10 @@ do not use them, or that violate the formatting instructions in the
 review.
 
 See the contents of the template for additional instructions on preparing the PDF file.
-Authors are not required to use Overleaf to prepare their submission. The LaTeX source
-for the template can be downloaded by clicking the "Menu" button in the top-right, then
-selecting the "Source" icon near the top of the menu that appears.
+Authors are not required to use Overleaf to prepare their submission: the zip archive
+above contains the same files. From Overleaf itself, the LaTeX source can be downloaded
+by clicking the "Menu" button in the top-right, then selecting the "Source" icon near the
+top of the menu that appears.
 
 ## Final Version
 
