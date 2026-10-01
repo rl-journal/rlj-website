@@ -136,6 +136,18 @@ td {
 /* Editorial board */
 .editors li { margin-bottom: 8px; }
 
+/* The reviewer rolls run to a few hundred names; columns keep them scannable
+   instead of one very long run. */
+.name-columns {
+  column-count: 3;
+  column-gap: 2em;
+}
+
+.name-columns li {
+  break-inside: avoid;
+  margin-bottom: 4px;
+}
+
 .editors .name { font-weight: bold; }
 
 /* Right-aligned small copyright line at the bottom of the content column */

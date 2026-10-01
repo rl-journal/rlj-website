@@ -61,10 +61,37 @@ export type Volume = {
   issue: Issue;
 };
 
+export type Person = {
+  name: string;
+  url?: string;
+  affiliation?: string;
+  note?: string;
+};
+
 export type BoardGroup = {
   role: string;
-  members: { name: string; url?: string; affiliation: string; note?: string }[];
+  members: Person[];
+  /* Groups are listed by surname unless this is false */
+  sorted?: boolean;
 };
+
+const surname = (name: string) => name.trim().split(/\s+/).at(-1) ?? name;
+
+/* Sort on load so a name can be appended anywhere in the JSON */
+function sortGroups(groups: BoardGroup[]): BoardGroup[] {
+  return groups.map((group) =>
+    group.sorted === false
+      ? group
+      : {
+          ...group,
+          members: [...group.members].sort(
+            (a, b) =>
+              surname(a.name).localeCompare(surname(b.name), "en") ||
+              a.name.localeCompare(b.name, "en"),
+          ),
+        },
+  );
+}
 
 let issuesCache: Issue[] | null = null;
 
@@ -110,7 +137,21 @@ export function getPaper(slug: string): Paper | undefined {
 }
 
 export function getBoard(): { intro: string; groups: BoardGroup[] } {
-  return JSON.parse(readFileSync(join(CONTENT_DIR, "board.json"), "utf8"));
+  const board = JSON.parse(readFileSync(join(CONTENT_DIR, "board.json"), "utf8"));
+  return { ...board, groups: sortGroups(board.groups) };
+}
+
+function getReviewers(): { intro: string; groups: BoardGroup[] } {
+  const data = JSON.parse(
+    readFileSync(join(CONTENT_DIR, "reviewers.json"), "utf8"),
+  );
+  return { ...data, groups: sortGroups(data.groups) };
+}
+
+export function getReviewerGroup(role: string): BoardGroup {
+  const group = getReviewers().groups.find((g) => g.role === role);
+  if (!group) throw new Error(`No reviewer group named "${role}" in reviewers.json`);
+  return group;
 }
 
 export function getPageHtml(name: string): string {
