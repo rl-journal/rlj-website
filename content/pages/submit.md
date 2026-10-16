@@ -144,6 +144,8 @@ Editor is expected to leave a comment in OpenReview with an updated timeline.
 When the reviewing pipeline is over capacity, we prioritize the timely review of initial
 submissions.
 
+Note that the review process may be delayed around holidays and certain events (such as RLC). In such cases, the email you receive when submitting will indicate the delay.
+
 ### Decisions
 
 - **Accept**: The paper is accepted in its current form and only minor changes are
