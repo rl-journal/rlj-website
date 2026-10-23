@@ -10,12 +10,6 @@
           "affiliation": "Alberta Machine Intelligence Institute (Amii), Department of Computing Science, University of Alberta"
         },
         {
-          "name": "Emma M. Jordan",
-          "url": "https://emmaajordan.github.io",
-          "affiliation": "University of Pittsburgh",
-          "note": "On a leave"
-        },
-        {
           "name": "Philip S. Thomas",
           "url": "https://people.cs.umass.edu/~pthomas/",
           "affiliation": "Manning College of Information and Computer Sciences, University of Massachusetts"
@@ -24,6 +18,12 @@
           "name": "Adam White",
           "url": "https://amw8.github.io/",
           "affiliation": "Alberta Machine Intelligence Institute (Amii), Department of Computing Science, University of Alberta"
+        },
+        {
+          "name": "Emma M. Jordan",
+          "url": "https://emmaajordan.github.io",
+          "affiliation": "University of Pittsburgh",
+          "note": "On a leave"
         }
       ],
       "sorted": false
