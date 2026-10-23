@@ -1,6 +1,16 @@
 # RLJ Submission Guide
 
-The RLJ peer review process prioritizes rigorous methodology over perceived importance, aiming to foster scholarly discussions on both well-established and emerging topics in RL.
+> *The RLJ peer review process prioritizes rigorous methodology over perceived importance, aiming to  foster scholarly discussions on both well-established and emerging topics in RL.*
+
+## Submission Procedure
+
+RLJ accepts submissions through
+[OpenReview](https://openreview.net/group?id=RLJ) on a rolling basis, with a new volume
+published four times a year. Papers intended for presentation at RLC must be submitted
+by that year's RLC deadline.
+
+A submission is a single [anonymized](#review-process) PDF typeset with the RLJ style
+files. See the [Authors Guide](/authors-guide) for how to prepare one.
 
 ## Scope
 
@@ -51,8 +61,7 @@ over-claiming), even if these errors could be corrected by changing a few words.
 Furthermore, rejection typically comes with a 6-month restriction from resubmitting.
 We therefore strongly encourage you to carefully read the instructions for reviewers to
 ensure that you are familiar with how your work will be evaluated. Submissions that do
-not meet these standards may be returned without review. The
-[Review Process](#review-process) section below summarizes what to expect.
+not meet these standards may be returned without review.
 
 ## Originality
 
@@ -80,18 +89,6 @@ financial support that contributed to the research, as well as any competing int
 including additional sources of income or financial relationships related to the
 subject of the manuscript. Disclosures should cover support received or interests held
 within the **18 months preceding submission**.
-
-## Submission Procedure
-
-RLJ accepts submissions via OpenReview, more information on this are coming soon.
- <!-- <strong style="color:red">TODO: OpenReview submission URL</strong>. -->
-
-Submissions must be typeset in LaTeX using the RLJ style files. Only PDF files may be
-submitted. Papers that do not use the RLJ style files or do not comply with the
-formatting instructions will be rejected without review.
-
-Page limits, the cover page requirement, supplementary material, and the style files
-themselves are all covered in the [Authors Guide](/authors-guide).
 
 ## Review Process
 
