@@ -69,7 +69,13 @@ timeline. Report the delay to the Editors-in-Chief.
 
 <!-- <strong style="color:red">TODO: process for reporting a delay to the Editors-in-Chief.</strong> -->
 
-## Accept / Revisions / Reject Criteria
+## Decision Criteria
+
+OpenReview currently offers you two recommendations, **Accept as is** and **Reject**,
+even though reviewers still recommend Accept, Revision, or Reject. Where a paper would
+have received Revisions, record it as a rejection and use the meta-review to invite
+resubmission once the concerns are addressed. The
+[decision table on the submission guide](/submit#decisions) is what authors are told.
 
 Review all of the other reference pages, particularly
 [Supporting Claims](/reviewers-guide/supporting-claims),
@@ -85,11 +91,10 @@ discussion of how hyperparameters were tuned, failure to report the meaning of e
 widths, and failing to state implicit assumptions in theorems.
 
 Note that this applies even if these issues could be fixed with minor edits. That is,
-such errors are viewed as a significant issue that typically results in rejection,
-not revisions. Note that rejection comes with a 6-month wait to resubmit, while revision
-allows immediate resubmission. *This deliberately strict policy is designed to encourage
-authors to carefully check the validity of their work, rather than relying on you and
-the review process to catch their mistakes.*
+such errors are viewed as a significant issue that typically warrants rejection with the
+6-month wait, rather than a rejection that invites resubmission. *This deliberately
+strict policy is designed to encourage authors to carefully check the validity of their
+work, rather than relying on you and the review process to catch their mistakes.*
 
 We also re-emphasize that RLJ aims to avoid tastemaking. Acceptance should not be
 based on the perceived impact of the work, nor should it be based on whether one wishes
@@ -110,11 +115,11 @@ on the cover page, whether their scope is appropriate, and whether they are prop
 contextualized. This is something more senior researchers (like you!) are much better
 positioned to do.
 
-## Revision Process
+## Resubmission
 
-If the paper receives "Revisions", the authors will be encouraged to resubmit within 3
-months. In such cases, ensure that the meta-review clearly states what issues the
-authors need to address for their work to be accepted.
+A rejection carries one of two terms, and the meta-review is where you set it: either the
+authors must wait **6 months**, or they may resubmit as soon as they have addressed the
+concerns you raised. Make clear which applies, and state what needs to be addressed.
 
 If the authors do resubmit, their resubmission should come with a letter to you, the
 Editor, that discusses the primary concerns that you and the reviewers had with the
@@ -125,4 +130,16 @@ letter even if the authors choose not to revise the manuscript.
 You may then decide whether to accept or reject the paper immediately, whether to
 consult the previous reviewers, or whether to initiate an entirely new review of the
 paper. Barring extenuating circumstances, resubmitted papers should either be accepted
-or rejected—they should not be returned for further revisions.
+or rejected outright.
+
+<!-- Restore when OpenReview gives the Action Editor all three options again:
+
+## Revision Process
+
+If the paper receives "Revisions", the authors will be encouraged to resubmit within 3
+months. In such cases, ensure that the meta-review clearly states what issues the
+authors need to address for their work to be accepted.
+
+Barring extenuating circumstances, resubmitted papers should either be accepted or
+rejected, they should not be returned for further revisions.
+-->

@@ -145,6 +145,44 @@ Note that the review process may be delayed around holidays and certain events (
 
 ### Decisions
 
+Reviewers recommend Accept, Revision, or Reject. The decision itself rests with the
+Editor, and is one of two:
+
+- **Accept as is**: The paper is accepted in its current form; only minor changes are
+  required, to the point that no response to the Editor is needed.
+- **Reject**: The paper is not accepted in its current form. The meta-review states
+  which of the two resubmission terms below applies.
+
+A rejection carries one of two resubmission terms:
+
+| The meta-review says | When you may resubmit |
+| --- | --- |
+| The work is not yet ready for publication | As soon as you have addressed every concern the Editor raised |
+| The work does not meet the acceptance criteria, or requires significant changes | After **6 months** |
+
+Where resubmission is invited, the sooner you resubmit, the more likely it is that some
+of the same editors and reviewers can be secured for it.
+
+Note that a failure to support a claim typically results in rejection with the 6-month
+wait, rather than an invitation to resubmit. See
+[Supporting Claims](/reviewers-guide/supporting-claims).
+
+### If you are invited to resubmit
+
+The meta-review will state what needs to be addressed. Your resubmission should come
+with a **letter to the Editor** discussing the primary concerns raised and how your
+changes address them. You may disagree with a concern, and that disagreement should
+still be discussed in the letter even if you chose not to change the manuscript.
+
+The Editor may then accept or reject the paper immediately, consult the previous
+reviewers, or initiate an entirely new review.
+
+<!-- Until OpenReview offers the Action Editor all three options, the decision is
+     "Accept as is" or "Reject", with the resubmission terms carried in the meta-review.
+     Restore the three-decision wording below once Revisions returns as a decision.
+
+### Decisions
+
 - **Accept**: The paper is accepted in its current form and only minor changes are
   required, to the point that no response to the Editor is needed.
 - **Revisions**: The Editor provides a list of questions or proposed changes. Authors
@@ -154,7 +192,7 @@ Note that the review process may be delayed around holidays and certain events (
 
 Note that a failure to support a claim typically results in **rejection, not revisions**.
 Because rejection carries a 6-month wait while revisions allow immediate resubmission,
-this distinction matters a great deal—see [Supporting Claims](/reviewers-guide/supporting-claims).
+this distinction matters a great deal, see [Supporting Claims](/reviewers-guide/supporting-claims).
 
 ### If your paper receives Revisions
 
@@ -166,8 +204,10 @@ not to change the manuscript.
 
 The Editor may then accept or reject the paper immediately, consult the previous
 reviewers, or initiate an entirely new review. Barring extenuating circumstances,
-resubmitted papers are either accepted or rejected—they are not returned for further
+resubmitted papers are either accepted or rejected, they are not returned for further
 revisions.
+-->
+
 
 ### Desk rejection
 
@@ -185,13 +225,13 @@ See [Desk Rejection Criteria and Process](/editors-guide/desk-rejection) for the
 ### How papers are evaluated
 
 Acceptance is based **only on the submission**, not on the potential of the paper with
-further edits. A paper that requires even minor changes may be desk rejected or returned
-for revisions. The five acceptance criteria reviewers apply are set out in
-[How Papers are Evaluated](/reviewers-guide#how-papers-are-evaluated).
+further edits. A paper that requires even minor changes may be desk rejected or rejected
+with an invitation to resubmit. The five acceptance criteria reviewers apply are set out
+in [How Papers are Evaluated](/reviewers-guide#how-papers-are-evaluated).
 
 Two consequences are worth stating plainly for authors. First, **presentation alone can
 sink a paper**: if a submission needs a nontrivial editing pass, restructuring, notation
-cleanup, figure redesign, or reference cleanup, it receives revisions at best. Second,
+cleanup, figure redesign, or reference cleanup, it will not be accepted as is. Second,
 **RLJ deliberately avoids tastemaking**: acceptance is not based on perceived impact, and
 clearly scoped incremental work should be accepted. Reviewers are explicitly instructed
 not to argue that your environments are too simple, that your method is not state of the
