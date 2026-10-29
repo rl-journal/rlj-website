@@ -44,8 +44,7 @@ const navLinks: NavLink[] = [
     ],
   },
   { href: "/board", label: "Editorial Board" },
-  // Hidden for now along with app/_news; rename it back to app/news to restore
-  // { href: "/news", label: "News" },
+  { href: "/news", label: "News" },
   { href: "/search", label: "Search" },
   { href: "/contact", label: "Contact" },
   {
