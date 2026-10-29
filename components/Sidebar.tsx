@@ -44,6 +44,7 @@ const navLinks: NavLink[] = [
     ],
   },
   { href: "/board", label: "Editorial Board" },
+  { href: "/news", label: "News" },
   { href: "/search", label: "Search" },
   { href: "/contact", label: "Contact" },
   {

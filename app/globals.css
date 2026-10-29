@@ -122,6 +122,10 @@ dd pre.bibtex {
   margin: 0.5em 0 0.4em;
 }
 
+.post-date { color: gray; }
+
+.signature { text-align: right; }
+
 /* Boxed callout in the markdown pages */
 .panel {
   border: 1px solid #000000;

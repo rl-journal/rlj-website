@@ -162,6 +162,60 @@ export function getPageHtml(name: string): string {
   return marked.parse(md, { async: false });
 }
 
+export type Post = {
+  slug: string;
+  title: string;
+  date: string;
+  html: string;
+};
+
+/* content/news/<slug>.md, starting with a front-matter block:
+   ---
+   title: ...
+   date: YYYY-MM-DD
+   --- */
+export function getPosts(): Post[] {
+  const dir = join(CONTENT_DIR, "news");
+  return readdirSync(dir)
+    .filter((f) => f.endsWith(".md"))
+    .map((f) => {
+      const src = readFileSync(join(dir, f), "utf8");
+      const match = src.match(/^---\n([\s\S]*?)\n---\n/);
+      if (!match) throw new Error(`content/news/${f} has no front matter`);
+      const fields = Object.fromEntries(
+        match[1].split("\n").map((line) => {
+          const i = line.indexOf(":");
+          return [line.slice(0, i).trim(), line.slice(i + 1).trim()];
+        }),
+      );
+      if (!fields.title || !/^\d{4}-\d{2}-\d{2}$/.test(fields.date ?? "")) {
+        throw new Error(`content/news/${f} needs a title and a YYYY-MM-DD date`);
+      }
+      usedIds = new Set(LAYOUT_IDS);
+      return {
+        slug: f.replace(/\.md$/, ""),
+        title: fields.title,
+        date: fields.date,
+        html: marked.parse(src.slice(match[0].length), { async: false }),
+      };
+    })
+    .sort((a, b) => b.date.localeCompare(a.date));
+}
+
+export function getPost(slug: string): Post | undefined {
+  return getPosts().find((p) => p.slug === slug);
+}
+
+// "October 29, 2026"; parsed as UTC so the day never shifts by time zone.
+export function formatDate(date: string): string {
+  return new Date(`${date}T00:00:00Z`).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    timeZone: "UTC",
+  });
+}
+
 // "1:23−45, 2024." — volume:pages with a real minus sign, as on JMLR.
 export function citation(paper: Paper): string {
   const pages = paper.pages ? `:${paper.pages.replace("-", "−")}` : "";

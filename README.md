@@ -33,6 +33,8 @@ All content is in `content/` — no code changes needed:
 - `content/pages/home.md` — the home page
 - `content/pages/submit.md` — the Submissions page
 - `content/board.json` — editorial board members (grouped by role)
+- `content/news/<slug>.md` — news posts, listed newest first at `/news`
+  and served at `/news/<slug>`
 - `content/papers/<year>.json` — one file per proceedings year, containing
   that year's issue metadata (`title`, `doi`, `issuePdf`, optional
   `coverPagesPdf`) and its papers. Each paper has: `slug` (its URL, e.g.
