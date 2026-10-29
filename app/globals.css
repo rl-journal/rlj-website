@@ -107,6 +107,15 @@ button.linklike {
 pre.bibtex {
   white-space: pre;
   overflow-x: auto;
+  font-family: Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 0.85em;
+  line-height: 1.35;
+}
+
+pre.bibtex + button {
+  font-family: inherit;
+  font-size: 0.85em;
+  padding: 1px 8px;
 }
 
 dd pre.bibtex {
