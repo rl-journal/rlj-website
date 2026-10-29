@@ -55,3 +55,7 @@ links point at the files hosted there.
 - `components/` — shared UI (sidebar, footer, paper list entry, BibTeX block)
 - `lib/content.ts` — reads and parses the `content/` files at build time
 - `content/` — all website content (see above)
+- `scripts/` — Python helpers run against a copy of the old
+  rlj.cs.umass.edu site: `import_old_site.py` builds a year's
+  `content/papers/<year>.json` from its pages, and `gen_htaccess.py`
+  writes the `.htaccess` redirecting old paper pages to rlj.org

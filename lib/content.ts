@@ -40,12 +40,14 @@ export type Paper = {
   bibtex: string;
 };
 
+/* doi and issuePdf stay null until an issue's final proceedings are out */
 export type Issue = {
   year: number;
   title: string;
-  doi: string;
+  note?: string;
+  doi: string | null;
   isbn: string | null;
-  issuePdf: string;
+  issuePdf: string | null;
   coverPagesPdf: string | null;
   xmlUrl: string | null;
   papers: Paper[];

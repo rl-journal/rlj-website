@@ -26,13 +26,20 @@ export default async function VolumePage({ params }: Props) {
       <h1>
         RLJ {volume.label} ({volume.year})
       </h1>
-      <p>
-        Published as part of {volume.issue.title}, DOI:{" "}
-        <a target="_blank" href={`https://doi.org/${volume.issue.doi}`}>
-          {volume.issue.doi}
-        </a>
-        .
-      </p>
+      {volume.issue.note && (
+        <p>
+          <strong>{volume.issue.note}</strong>
+        </p>
+      )}
+      {volume.issue.doi && (
+        <p>
+          Published as part of {volume.issue.title}, DOI:{" "}
+          <a target="_blank" href={`https://doi.org/${volume.issue.doi}`}>
+            {volume.issue.doi}
+          </a>
+          .
+        </p>
+      )}
       {volume.papers.map((paper) => (
         <PaperListItem key={paper.slug} paper={paper} />
       ))}

@@ -20,9 +20,9 @@ export default function VolumesPage() {
       ))}
 
       <h2>Complete Proceedings</h2>
-      {issues.map((issue) => (
+      {issues.filter((issue) => issue.issuePdf).map((issue) => (
         <p key={issue.year}>
-          {issue.title}: [<a target="_blank" href={issue.issuePdf}>pdf</a>]
+          {issue.title}: [<a target="_blank" href={issue.issuePdf ?? undefined}>pdf</a>]
           {issue.coverPagesPdf && (
             <>
               [
@@ -40,11 +40,16 @@ export default function VolumesPage() {
               </a>
               ]
             </>
-          )}{" "}
-          DOI:{" "}
-          <a target="_blank" href={`https://doi.org/${issue.doi}`}>
-            {issue.doi}
-          </a>
+          )}
+          {issue.doi && (
+            <>
+              {" "}
+              DOI:{" "}
+              <a target="_blank" href={`https://doi.org/${issue.doi}`}>
+                {issue.doi}
+              </a>
+            </>
+          )}
           {issue.isbn && <>, ISBN: {issue.isbn}</>}
         </p>
       ))}
