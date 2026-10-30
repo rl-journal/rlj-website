@@ -6,7 +6,7 @@
 
 RLJ accepts submissions through
 [OpenReview](https://openreview.net/group?id=RLJ) on a rolling basis, with a new volume
-published four times a year. Papers intended for presentation at RLC must be submitted
+published four times a year. Papers intended for presentation at RLC must be accepted
 by that year's RLC deadline.
 
 A submission is a single [anonymized](#review-process) PDF typeset with the RLJ style
