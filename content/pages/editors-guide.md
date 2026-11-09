@@ -26,9 +26,8 @@ be found in [Desk Rejection Criteria and Process](/editors-guide/desk-rejection)
 ### 2. Assign and recruit reviewers
 
 Assign a Senior Reviewer and a Technical Reviewer in OpenReview. If you know of
-particularly suitable reviewers for the paper who are not already in the system, you
-may request that they be added to the reviewer pool. You may also ask them to review
-just this one paper, without joining the RLJ reviewer pool. You should complete reviewer 
+particularly suitable reviewers for the paper who are not already in the system and
+would like to invite them, please contact the Editors-in-Chief. You should complete reviewer 
 assignment within 2 weeks of being assigned the paper. This step is critical - 
 identifying or recruiting reliable reviewers whom you trust will make your subsequent
 job much easier.
