@@ -10,7 +10,10 @@ published four times a year. Papers intended for presentation at RLC must be acc
 by that year's RLC deadline.
 
 A submission is a single [anonymized](#review-process) PDF typeset with the RLJ style
-files. See the [Authors Guide](/authors-guide) for how to prepare one.
+files. See the [Authors Guide](/authors-guide) for how to prepare one. Once your paper
+is under review, do not upload a new PDF or change the supplementary material without
+prior approval from the Editors; submissions modified without approval will be desk
+rejected.
 
 ## Scope
 
