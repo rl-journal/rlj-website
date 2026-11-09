@@ -20,23 +20,30 @@ part; it is very intentional. For the wider context of these instructions, see t
 
 ## Questions You Will Be Asked
 
-Below are the questions you will be asked in OpenReview—there will be a textbox for
-each sub-bullet here.
+For now, technical and senior reviewers share one review form in OpenReview (see
+[The Review Form](/reviewers-guide#the-review-form)). As a technical reviewer, fill in
+these fields:
 
-1. For each claimed contribution:
+1. **Claimed Contributions.** For each claimed contribution:
    - State the claim in your own words.
    - State what evidence in the paper was provided (or intended) as support for the
      claim.
    - State whether the evidence was sufficient to establish the claim. This should be a
-     short statement of yes / no / partially. The next question asks you to explain and
-     support these brief statements.
+     short statement of yes / no / partially, which the next point explains and
+     supports.
    - Explain why the provided evidence was or was not sufficient to establish the
      claim. See [Supporting Claims](/reviewers-guide/supporting-claims) for a discussion of what
      does and does not constitute sufficient support for claims.
-2. Comment on the polish and presentation of the paper. See
-   [Polished and Well Written](/reviewers-guide/polished) for a discussion of what constitutes a
-   polished and well-written submission.
-3. Miscellaneous - list any other errors you found or comments you have.
+2. **Polish And Presentation.** Comment on the polish and presentation of the paper:
+   its structure, readability, notational consistency, figure readability, references,
+   etc. See [Polished and Well Written](/reviewers-guide/polished) for a discussion of what
+   constitutes a polished and well-written submission.
+3. **Additional Comments.** List any other errors you found or comments you have,
+   including minor errors that do not affect the decision but should be fixed.
+4. **Recommendation.** Accept as is, Revision, or Reject; see
+   [The Review Form](/reviewers-guide#the-review-form) for what each one means.
+
+Leave **General Review** empty; it is for senior reviewers.
 
 The assessment also needs to be written so that it can be easily understood by three
 audiences: 1) the authors, 2) other reviewers who have read the paper, and 3) people up

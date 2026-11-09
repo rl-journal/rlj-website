@@ -64,17 +64,29 @@ provide sufficient evidence to support each one of them?*
 ## Organize Your Review as Follows
 
 Unlike technical reviewers, senior reviewers are not asked to complete a series of
-structured questions. Instead, they are provided with two text boxes: one to explicitly
-discuss the paper's claimed contributions, and another to provide a traditional review.
+structured questions. For now, both roles share one review form in OpenReview (see
+[The Review Form](/reviewers-guide#the-review-form)). As a senior reviewer, fill in
+these fields:
 
-### Claimed contributions box
+- **General Review**: your full review, including your discussion of the claimed
+  contributions, organized as described below.
+- **Additional Comments**: any additional errors or comments, such as minor errors that
+  do not affect the decision but should be fixed.
+- **Recommendation**: Accept as is, Revision, or Reject.
 
-Reviewers are expected to discuss where the evidence to support each claimed
-contribution is in the paper, and whether the provided evidence is sufficient to match
-the claims. The [technical reviewer instructions](/reviewers-guide/technical-reviewers)
-explicitly require them to answer the questions below. We encourage senior reviewers to
-address the same points **for each contribution**. Editors are expected to check every
-review for this.
+*Claimed Contributions* is optional for senior reviewers: if you prefer, you may
+discuss the claimed contributions there instead of in your General Review.
+
+### Claimed contributions
+
+Discuss the paper's claimed contributions in your General Review (or in the optional
+Claimed Contributions field). Reviewers are expected to discuss where the evidence to
+support each claimed contribution is in the paper, and whether the provided evidence is
+sufficient to match the claims. The
+[technical reviewer instructions](/reviewers-guide/technical-reviewers) explicitly
+require them to answer the questions below. We encourage senior reviewers to address
+the same points **for each contribution**. Editors are expected to check every review
+for this.
 
 - State the claimed contribution in your own words.
 - State what evidence in the paper was provided (or intended) as support for the claim.
@@ -84,7 +96,7 @@ review for this.
   See [Supporting Claims](/reviewers-guide/supporting-claims) for a discussion of what does and
   does not constitute sufficient support for claims.
 
-### General review
+### The rest of the general review
 
 Although the claimed contributions should be used as a rubric that will often decide on
 the acceptance or rejection of the paper, a comprehensive review will also talk about
@@ -99,8 +111,8 @@ structure their reviews as follows:
 
 - Summarize what the paper claims to do/contribute and what knowledge gap it addresses.
   Be positive and generous (assuming the paper achieves what it sets out to do).
-- Clearly state your recommendation (accept or reject) with one or two key reasons for
-  this choice.
+- Clearly state your recommendation (Accept as is, Revision, or Reject) with one or two
+  key reasons for this choice, and select the same option in the Recommendation field.
 - Provide supporting arguments for the reasons for the decision.
 - Provide additional feedback to improve the paper. Make it clear that these points are
   here to help, not necessarily part of your decision-making.

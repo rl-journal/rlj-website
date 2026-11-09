@@ -75,6 +75,37 @@ revisions, depending on the scale of the issues. See
 [Polished and Well Written](/reviewers-guide/polished) for a description of what does and does
 not constitute a polished and well-written paper.
 
+## The Review Form
+
+Because of current technical limitations, technical and senior reviewers submit their
+reviews through the same form in OpenReview. We are working with OpenReview to provide a
+separate form for each role. Until then, each field is marked with the role it is for;
+fill in the fields for your role and leave the others empty.
+
+Technical reviewers fill in **Claimed Contributions** and **Polish And Presentation**.
+In Claimed Contributions, they go through each claimed contribution in turn: the claim
+in their own words, the evidence the paper provided, whether that evidence was
+sufficient, and why. In Polish And Presentation, they comment on the paper's structure,
+readability, notational consistency, figure readability, references, and so on.
+
+Senior reviewers write their review in **General Review**, covering the paper's claimed
+contributions and their evidence, whether the results are of interest to a subset of
+RLJ readers, and an overall assessment. Claimed Contributions is optional for senior
+reviewers, should they prefer to discuss the contributions there.
+
+Both roles use **Additional Comments** for any other errors or comments, such as minor
+errors that do not affect the decision but should be fixed, and both choose a
+**Recommendation**, which is one of:
+
+- **Accept as is**: the paper is ready for publication in its current form, apart from a
+  small number of minor edits.
+- **Revision**: the paper needs a nontrivial editing pass, restructuring, or other
+  substantial presentation work.
+- **Reject**: the paper requires significant changes or it does not meet the acceptance
+  criteria.
+
+The final decision rests with the Editor; see [Decisions](/submit#decisions).
+
 ## Instructions for Each Role
 
 - [Technical Reviewer (TR) Instructions](/reviewers-guide/technical-reviewers)
