@@ -25,14 +25,18 @@ export default function PaperLinks({
         pdf
       </a>
       ][
-      <button
-        type="button"
-        className="linklike"
+      {/* a link rather than a button*/}
+      <a
+        href={`/papers/${slug}`}
+        role="button"
         aria-expanded={showBibtex}
-        onClick={() => setShowBibtex((shown) => !shown)}
+        onClick={(e) => {
+          e.preventDefault();
+          setShowBibtex((shown) => !shown);
+        }}
       >
         bib
-      </button>
+      </a>
       ]
       {suppUrl && (
         <>
