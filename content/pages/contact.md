@@ -1,12 +1,9 @@
 # Contact
 
-Coming soon!
-<!-- <strong style="color:red">TODO — replace the placeholders below with real addresses before publishing.</strong> -->
-<!-- 
 ## Editorial enquiries
 
 For questions about the journal, published volumes, or corrections to a published
-paper, contact the editors at <strong style="color:red">TODO: editorial email address</strong>.
+paper, contact the editors at [rljadmins@gmail.com](mailto:rljadmins@gmail.com).
 
 ## Submissions and peer review
 
@@ -18,4 +15,4 @@ how the review process works.
 ## Website
 
 To report a broken link, a missing PDF, or an error in paper metadata on this site,
-contact <strong style="color:red">TODO: website contact address</strong>. -->
+contact [rljadmins@gmail.com](mailto:rljadmins@gmail.com).
