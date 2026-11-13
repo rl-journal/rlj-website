@@ -56,7 +56,8 @@ English *before* they appear, so that readers do not have to figure out what the
 expression means from the math alone.
 
 **Figures and tables should be readable at normal viewing size.** Axes, legends, labels,
-line styles, captions, and annotations should be legible. Captions (or text surrounding
+line styles, captions, and annotations should be legible. Text should be no smaller than 
+the footnote size (8pt) in the main text. Captions (or text surrounding
 or prior to the reference) should explain what is shown, including the relevant
 experimental setting, metric, and meaning of error bars or shaded regions when
 applicable.
